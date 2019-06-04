@@ -46,6 +46,7 @@ private:
     CatalogManager *cm_;
     std::string db_name_;
 public:
+
 	BPlusTree(Index* idx, BufferManager *hdl, CatalogManager *cm, std::string db_name) {
         hdl_ = hdl;
         cm_ = cm;
