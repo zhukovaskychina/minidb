@@ -6,6 +6,7 @@
 #include "index_manager.h"
 
 #include <fstream>
+#include <iostream>
 
 #include "record_manager.h"
 #include "exceptions.h"
@@ -774,7 +775,7 @@ void BPlusTreeNode::Print() {
 	printf("BlockNum: %d Count: %d, Parent: %d  IsLeaf:%d\n",block_num_,GetCount(),GetParent(),GetIsLeaf());
 	printf("Keys: { ");
 	for(int i =0; i<GetCount();i++) {
-		cout<<GetKeys(i);
+		std::cout<<GetKeys(i);
 	}
 	printf(" }\n");
     

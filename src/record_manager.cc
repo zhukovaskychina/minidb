@@ -7,7 +7,7 @@
 #include "record_manager.h"
 
 #include <iomanip>
-
+#include <iostream>
 #include "index_manager.h"
 
 using namespace std;
